@@ -16,20 +16,8 @@ const GlobalStyle = createGlobalStyle`
 
 html {
   height: 100%;
-  font-size: 43.75%;
+  font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
-}
-
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media only screen and (min-width: 1340px) {
-  html {
-    font-size: 56.25%;
-  }
 }
 
 body {
@@ -48,7 +36,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  line-height: 1;
 }
 
 main {
