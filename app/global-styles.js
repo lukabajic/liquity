@@ -17,6 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.font-loaded {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 *,
 *::after,
 *::before {
