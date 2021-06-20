@@ -105,6 +105,15 @@ module.exports = options => ({
           },
         },
       },
+      {
+        test: /\.ttf?(\?v=\d+\.\d+\.\d+)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            name: './fonts/[name].[ext]', // Output below ./fonts
+          },
+        },
+      },
     ],
   },
   plugins: options.plugins.concat([
