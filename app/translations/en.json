@@ -1,1 +1,8 @@
-[]
+{
+  "app.containers.Index.Header.name": "Liquity Land",
+  "app.containers.Index.Header.description": "The most simple front-end",
+  "app.containers.Index.Header.about": "About",
+  "app.containers.Index.Header.docs": "Docs",
+  "app.containers.Index.Header.blog": "Blog",
+  "app.containers.Index.Header.toApp": "To the App"
+}
