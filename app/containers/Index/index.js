@@ -4,24 +4,33 @@
  *
  */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { compose } from 'redux';
 
+import Header from './Header';
+
 import messages from './messages';
 
 export function Index() {
   return (
-    <div>
+    <Fragment>
       <Helmet>
-        <title>Index</title>
-        <meta name="description" content="Description of Index" />
+        <title>Liquity Land</title>
+        <meta
+          name="description"
+          content="The Most Simple Frontend for Liquity decentralized borrowing protocol. Draw interest free loans against ETH as collateral. Earn ETH and LQTY tokens by depositing LUSD to Stability Pool. "
+        />
+        <meta
+          name="keywords"
+          content="liquity, ethereum, lending, cryptocurrency, borrow, defi, ETH, trove, loan, frontend, LQTY, LUSD, collateral, debt, stake, protocol, blockchain, wallet, pool, rewards, gain, kickback, land, liquity land"
+        />
       </Helmet>
-      <FormattedMessage {...messages.header} />
-    </div>
+      <Header />
+    </Fragment>
   );
 }
 
