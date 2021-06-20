@@ -1,6 +1,6 @@
 /**
  *
- * Tests for Typography
+ * Tests for Elements
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -10,12 +10,12 @@ import React from 'react';
 import { render } from 'react-testing-library';
 // import 'jest-dom/extend-expect'; // add some helpful assertions
 
-import Typography from '../index';
+import Elements from '../index';
 
-describe('<Typography />', () => {
+describe('<Elements />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
-    render(<Typography />);
+    render(<Elements />);
     expect(spy).not.toHaveBeenCalled();
   });
 
@@ -31,7 +31,7 @@ describe('<Typography />', () => {
   it.skip('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<Typography />);
+    } = render(<Elements />);
     expect(firstChild).toMatchSnapshot();
   });
 });
