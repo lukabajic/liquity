@@ -6,7 +6,7 @@
 
 import React, { memo } from 'react';
 import { NavLink } from 'react-router-dom';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Link = ({ children, href, activeClassName, to, ...rest }) => {
   if (href)
