@@ -1,19 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: "Futura BT light";
-  src: local("Futura BT light"), url("./fonts/futura-light-bt.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Futura BT heavy";
-  src: local("Futura BT heavy"), url("./fonts/futura-hv-bt-heavy.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Futura BT medium";
-  src: local("Futura BT heavy"), url("./fonts/futura-md-bt-medium.ttf") format("truetype");
-}
-
 html {
   height: 100%;
   font-size: 62.5%;
@@ -22,7 +9,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Futura BT light", sans-serif;
+  font-family: sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   background-color: #fff;
