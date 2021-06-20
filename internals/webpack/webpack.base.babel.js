@@ -106,11 +106,12 @@ module.exports = options => ({
         },
       },
       {
-        test: /\.ttf?(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(ttf|eot|woff|woff2)$/,
+        type: 'asset/resource',
         use: {
           loader: 'url-loader',
           options: {
-            name: './fonts/[name].[ext]', // Output below ./fonts
+            name: './fonts/[name].[ext]',
           },
         },
       },
