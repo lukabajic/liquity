@@ -37,10 +37,10 @@ body {
   font-family: "Futura BT light", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 *,
 *::after,
