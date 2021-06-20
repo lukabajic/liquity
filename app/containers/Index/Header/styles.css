@@ -1,0 +1,71 @@
+.Header {
+  padding: 6.4rem 6.4rem 0;
+}
+
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Nav__links {
+  display: flex;
+}
+
+.Nav__links > *:not(:last-child) {
+  margin-right: 3.6rem;
+}
+
+.Nav__link {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: -0.48px;
+  color: #3a3d43;
+  opacity: 0.75;
+  transition: 0.15s opacity;
+}
+
+.Nav__link:hover {
+  opacity: 1;
+}
+
+.Nav__app-link {
+  padding: 1.2rem 1.8rem;
+  border-radius: 2.35rem;
+  box-shadow: 4.5px 7.8px 19.5px 1.5px rgba(50, 86, 109, 0.13);
+  border: solid 0.3rem #bde8e1;
+
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #6cc5ff;
+
+  transition: all 0.15s;
+}
+
+.Nav__app-link:hover {
+  background-color: #bde8e1;
+  color: #ffffff;
+}
+
+.Brand {
+  display: flex;
+  line-height: 1;
+}
+
+.Brand__logo {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2.2rem;
+}
+
+.Brand__name {
+  font-weight: 300;
+  color: #252a34;
+}
+
+.Brand__description {
+  font-weight: 500;
+  color: #8a9395;
+  letter-spacing: 0.05px;
+}
