@@ -39,7 +39,7 @@ const Header = () => (
           </li>
         ))}
         <li>
-          <Link className="Nav__app-link">
+          <Link className="Nav__app-link" href="https://app.liquityland.com">
             <FormattedMessage {...messages.toApp} />
           </Link>
         </li>
