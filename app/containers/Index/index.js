@@ -8,28 +8,38 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
 import { compose } from 'redux';
+import { FormattedMessage, injectIntl } from 'react-intl';
+import styled from 'styled-components';
 
 import Header from './Header';
 
 import messages from './messages';
 
-export function Index() {
+const Main = styled.main`
+  width: 100%;
+  max-width: 100%;
+
+  @media only screen and (min-width: 540px) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+`;
+
+export function Index({ intl }) {
+  const description = intl.formatMessage({ ...messages.description });
+  const keywords = intl.formatMessage({ ...messages.keywords });
+  const name = intl.formatMessage({ ...messages.name });
+
   return (
     <Fragment>
       <Helmet>
-        <title>Liquity Land</title>
-        <meta
-          name="description"
-          content="The Most Simple Frontend for Liquity decentralized borrowing protocol. Draw interest free loans against ETH as collateral. Earn ETH and LQTY tokens by depositing LUSD to Stability Pool. "
-        />
-        <meta
-          name="keywords"
-          content="liquity, ethereum, lending, cryptocurrency, borrow, defi, ETH, trove, loan, frontend, LQTY, LUSD, collateral, debt, stake, protocol, blockchain, wallet, pool, rewards, gain, kickback, land, liquity land"
-        />
+        <title>{name}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
       </Helmet>
       <Header />
+      <Main>Cao</Main>
     </Fragment>
   );
 }
@@ -49,4 +59,6 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-export default compose(withConnect)(Index);
+const InjectedComponent = injectIntl(Index);
+
+export default compose(withConnect)(InjectedComponent);
