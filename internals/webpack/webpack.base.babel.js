@@ -107,7 +107,6 @@ module.exports = options => ({
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,
-        type: 'asset/resource',
         use: {
           loader: 'url-loader',
           options: {
