@@ -32,6 +32,12 @@ export const H4 = styled.h4`
   text-align: center;
 `;
 
+export const P = styled.p`
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: -0.48px;
+`;
+
 export const Footnote = styled.p`
   font-size: 1.5rem;
   font-weight: 300;
