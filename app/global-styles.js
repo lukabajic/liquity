@@ -89,6 +89,7 @@ sup {
 
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 button,
