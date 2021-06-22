@@ -1,0 +1,39 @@
+.Button {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.Button__medium {
+  font-size: 3.6rem;
+  font-weight: 500;
+  letter-spacing: -0.72px;
+
+  padding: 2.4rem 3.6rem;
+  border-radius: 2.5rem;
+  box-shadow: 4.5px 7.8px 19.5px 1.5px rgba(50, 86, 109, 0.13);
+}
+
+.Button__primary {
+  color: #f1f6ff;
+  background-color: #63bef9;
+}
+
+.Button__secondary {
+  color: #2875a7;
+  background-color: #f3f0f1;
+}
+
+.Button__disabled {
+  opacity: 0.75;
+}
+
+.Button__uppercase {
+  text-transform: uppercase;
+}
