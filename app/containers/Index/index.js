@@ -9,20 +9,23 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { compose } from 'redux';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 
 import Header from './Header';
+import Banner from './Banner';
 
 import messages from './messages';
 
 const Main = styled.main`
   width: 100%;
   max-width: 100%;
+  padding: 0 1rem;
 
   @media only screen and (min-width: 540px) {
     max-width: 90%;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 `;
 
@@ -39,7 +42,9 @@ export function Index({ intl }) {
         <meta name="keywords" content={keywords} />
       </Helmet>
       <Header />
-      <Main>Cao</Main>
+      <Main>
+        <Banner />
+      </Main>
     </Fragment>
   );
 }
