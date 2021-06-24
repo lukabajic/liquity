@@ -1,0 +1,38 @@
+.Footer {
+  margin-top: 5.5rem;
+}
+
+.Footer__links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.Footer__link,
+.Footer__link:visited,
+.Footer__link:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.Footer__link ion-icon {
+  font-size: 2.5rem;
+}
+
+.Footer__link p {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  color: #8f8f8f;
+}
+
+.Footer__email {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}

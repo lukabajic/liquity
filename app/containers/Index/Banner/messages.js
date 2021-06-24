@@ -6,7 +6,7 @@
 
 import { defineMessages } from 'react-intl';
 
-export const scope = 'app.containers.Index.Header';
+export const scope = 'app.containers.Index.Banner';
 
 export default defineMessages({
   header: {
@@ -17,7 +17,7 @@ export default defineMessages({
   paragraph: {
     id: `${scope}.paragraph`,
     defaultMessage:
-      'Earn 99% of the frontend rewards through kickback rate for stability providers',
+      'Earn 99% of the frontend rewards through kickback rate for stability providers.',
   },
   primaryButton: {
     id: `${scope}.primaryButton`,

@@ -32,10 +32,16 @@ export const H4 = styled.h4`
   text-align: center;
 `;
 
-export const P = styled.p`
+export const Callout = styled.p`
   font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: -0.48px;
+`;
+
+export const Body = styled.p`
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: -0.44px;
 `;
 
 export const Footnote = styled.p`

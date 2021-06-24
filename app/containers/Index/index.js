@@ -12,10 +12,16 @@ import { compose } from 'redux';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 
+import Footer from '../../components/Footer';
+
 import Header from './Header';
 import Banner from './Banner';
+import Protocol from './Protocol';
 
 import messages from './messages';
+import background from './background.jpg';
+
+import './styles.css';
 
 const Main = styled.main`
   width: 100%;
@@ -27,6 +33,19 @@ const Main = styled.main`
     margin: 0 auto;
     padding: 0 1.5rem;
   }
+`;
+
+const Background = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 125vw;
+  width: 100vw;
+  z-index: -1;
+  background-image: url('${background}');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export function Index({ intl }) {
@@ -42,15 +61,18 @@ export function Index({ intl }) {
         <meta name="keywords" content={keywords} />
       </Helmet>
       <Header />
+      <Background />
       <Main>
         <Banner />
+        <Protocol />
+        <Footer className="Index__footer" />
       </Main>
     </Fragment>
   );
 }
 
 Index.propTypes = {
-  dispatch: PropTypes.func.isRequired,
+  intl: PropTypes.any,
 };
 
 function mapDispatchToProps(dispatch) {

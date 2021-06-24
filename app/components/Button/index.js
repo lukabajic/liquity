@@ -23,9 +23,32 @@ const Button = React.forwardRef(
       disabled,
       icon,
       iconColor = 'inherit',
+      href,
+      blank = false,
     },
     ref,
   ) => {
+    if (href)
+      return (
+        <a
+          className={cn('Button', className, {
+            Button__medium: medium,
+            Button__primary: primary,
+            Button__secondary: secondary,
+            Button__uppercase: uppercase,
+            Button__disabled: disabled,
+          })}
+          onClick={onClick}
+          disabled={disabled}
+          ref={ref}
+          href={href}
+          target={blank ? '_blank' : '_self'}
+        >
+          {children}
+          {icon && <ion-icon style={{ color: iconColor }} name={icon} />}
+        </a>
+      );
+
     return (
       <button
         className={cn('Button', className, {
@@ -50,8 +73,12 @@ Button.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func,
   primary: PropTypes.bool,
+  secondary: PropTypes.bool,
+  medium: PropTypes.bool,
   uppercase: PropTypes.bool,
   disabled: PropTypes.bool,
+  icon: PropTypes.string,
+  iconColor: PropTypes.string,
 };
 
 export default Button;

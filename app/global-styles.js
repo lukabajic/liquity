@@ -5,6 +5,14 @@ html {
   height: 100%;
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
 }
 
 body {
