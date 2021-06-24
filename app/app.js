@@ -15,6 +15,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
+import FontFaceObserver from 'fontfaceobserver';
 
 // Import root app
 import App from 'containers/App';
@@ -32,6 +33,13 @@ import configureStore from './configureStore';
 
 // Import i18n messages
 import { translationMessages } from './i18n';
+
+const SpaceGrotesk = new FontFaceObserver('Space Grotesk', {});
+
+// When Space Grotesk is loaded, add a font-family using Space Grotesk to the body
+SpaceGrotesk.load().then(() => {
+  document.body.classList.add('font-loaded');
+});
 
 // Create redux store with history
 const initialState = {};

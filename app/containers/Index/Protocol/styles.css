@@ -1,0 +1,68 @@
+.Protocol {
+  margin-top: 8rem;
+}
+
+.Protocol__head {
+  margin-bottom: 7.2rem;
+}
+
+.Protocol__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.Protocol__description {
+  text-align: center;
+  max-width: 86rem;
+  margin: 0 auto;
+}
+
+.Protocol__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.Protocol__body {
+  margin-top: 7.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3.6rem;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Protocol__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .Protocol__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 7.2rem auto 0;
+  }
+}
+
+.Protocol__item-header {
+  margin-bottom: 3.6rem;
+  text-align: center;
+}
+
+.Protocol__item-content {
+  margin-bottom: 3.2rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.Protocol__item-link {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.48px;
+  color: #4492bf;
+  text-align: center;
+}

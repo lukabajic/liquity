@@ -105,6 +105,15 @@ module.exports = options => ({
           },
         },
       },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            name: './fonts/[name].[ext]',
+          },
+        },
+      },
     ],
   },
   plugins: options.plugins.concat([
