@@ -43,7 +43,7 @@ const Banner = () => (
           iconColor="#68d0ca"
           href="https://youtube.com"
           blank
-          className="Banner__button"
+          className="Banner__button Banner__button--right"
         >
           <FormattedMessage {...messages.secondaryButton} />
         </Button>
