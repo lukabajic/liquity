@@ -9,11 +9,10 @@ import { FormattedMessage } from 'react-intl';
 import cn from 'classnames';
 
 import Link from '../../../components/Link';
-import { H3, Footnote } from '../../../components/Elements';
+import Brand from '../../../components/Brand';
 
 import messages from './messages';
 
-import logo from './logo.png';
 import './styles.css';
 
 const NAV_LINKS = [
@@ -35,17 +34,7 @@ const Header = () => {
   return (
     <header className="Header">
       <nav className="Nav">
-        <Link className="Brand" to="/">
-          <img className="Brand__logo" src={logo} />
-          <div className="Brand__text">
-            <H3 className="Brand__name">
-              <FormattedMessage {...messages.name} />
-            </H3>
-            <Footnote className="Brand__description">
-              <FormattedMessage {...messages.description} />
-            </Footnote>
-          </div>
-        </Link>
+        <Brand />
 
         <ul className={cn('Nav__links', { Nav__open: navOpen })}>
           <button className="Nav__closer" onClick={() => setNavOpen(false)}>

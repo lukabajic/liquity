@@ -9,14 +9,6 @@ import { defineMessages } from 'react-intl';
 export const scope = 'app.containers.Index.Header';
 
 export default defineMessages({
-  name: {
-    id: `${scope}.name`,
-    defaultMessage: 'Liquity Land',
-  },
-  description: {
-    id: `${scope}.description`,
-    defaultMessage: 'The most simple front-end',
-  },
   about: {
     id: `${scope}.about`,
     defaultMessage: 'About',
