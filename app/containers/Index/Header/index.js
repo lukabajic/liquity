@@ -22,6 +22,13 @@ const NAV_LINKS = [
   { label: messages.blog, href: 'https://medium.com/liquity' },
 ];
 
+const SUB_LINKS = [
+  { label: messages.trove, to: '/trove' },
+  { label: messages.stabilityPool, to: '/stability-pool' },
+  { label: messages.stake, to: '/stake' },
+  { label: messages.liquidation, to: '/liquidation' },
+];
+
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
@@ -52,6 +59,24 @@ const Header = () => {
               </Link>
             </li>
           ))}
+
+          <li>
+            <div className="Nav__link Nav__link--with-sub">
+              <FormattedMessage {...messages.preview} />
+              <ion-icon name="chevron-down-outline" />
+
+              <ul className="Nav__subcategories">
+                {SUB_LINKS.map(({ label, to }, i) => (
+                  <li key={i}>
+                    <Link className="Nav__link" to={to}>
+                      <FormattedMessage {...label} />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+
           <li>
             <Link className="Nav__app-link" href="https://app.liquityland.com">
               <FormattedMessage {...messages.toApp} />

@@ -29,6 +29,26 @@ export default defineMessages({
     id: `${scope}.blog`,
     defaultMessage: 'Blog',
   },
+  preview: {
+    id: `${scope}.preview`,
+    defaultMessage: 'Preview',
+  },
+  trove: {
+    id: `${scope}.trove`,
+    defaultMessage: 'Trove',
+  },
+  stabilityPool: {
+    id: `${scope}.stabilityPool`,
+    defaultMessage: 'Stability Pool',
+  },
+  stake: {
+    id: `${scope}.stake`,
+    defaultMessage: 'Stake',
+  },
+  liquidation: {
+    id: `${scope}.liquidation`,
+    defaultMessage: 'Liquidation',
+  },
   toApp: {
     id: `${scope}.toApp`,
     defaultMessage: 'To the App',
